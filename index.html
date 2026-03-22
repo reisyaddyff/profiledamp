@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <h2>My Profile</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="card">
+        <img src="imup.jpeg" class="banner">
+        <img src="orangimut.jpeg" class="profile">
+        <h2>Reisya El-Adzkiya</h2>
+        <p>Mahasiswa Sistem Informasi Universitas Brawijaya</p>
+        <button onclick="scrollToAbout()">Learn More</button>
+    </section>
+
+    <section id="about" class="card">
+        <h2>About Me</h2>
+        <p>Saya merupakan mahasiswa program studi Sistem Informasi jenjang sarjana (S1) di Universitas Brawijaya.</p>
+
+        <h3>Pendidikan</h3>
+        <ul>
+            <li> SD Muhammadiyah 2 Sidoarjo</li>
+            <li> SMP Muhammadiyah 1 Sidoarjo</li>
+            <li> SMA Muhammadiyah 2 Sidoarjo</li>
+            <li> S1 Sistem Informasi - Universitas Brawijaya</li>
+        </ul>
+
+        <h3>Skills</h3>
+        <div class="skills">
+            <span>MySQL</span>
+            <span>Java</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Microsoft Office</span>
+        </div>
+    </section>
+
+    <section id="contact" class="card">
+        <h2>Contact Me</h2>
+
+        <div class="contact-container">
+            <div>
+                <p>Email: reisyaeladzkiya@gmail.com</p>
+                <p>Instagram: @rreiisyaa</p>
+                <p>Line: @sanaeegy</p>
+                <p>LinkedIn: linkedin.com/in/reisyael</p>
+            </div>
+
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 My Profile</p>
+    </footer>
+    <script>
+        function scrollToAbout() {
+            document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
